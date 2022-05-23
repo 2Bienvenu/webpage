@@ -1,0 +1,696 @@
+:root {
+    --color-white: hsl(252, 30%, 100%);
+    --color-light: hsl(252, 30%, 95%);
+    --color-gray: hsl(252, 15%, 65%);
+    --color-primary: hsl(252, 100%, 36%);
+    --color-secondary: hsl(252, 100%, 90%);
+    --color-success: hsl(120, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-dark: hsl(252, 30%, 15%); 
+    --color-black: hsl(252, 30%, 10%); 
+
+  }
+@font-face {
+    font-family: body;
+    src: url(./Mada/Mada-ExtraLight.ttf);
+}
+@font-face {
+    font-family: logo;
+    src: url(./vegan-style-font/VeganStylePersonalUse-5Y58.ttf);
+}
+body{
+    background-color: var(--color-light);
+    user-select: none;
+    overflow-x: hidden;
+    font-size: 0.7rem;
+    font-family: body;
+
+}
+
+/*-----------------------------------top-----------------------------------------*/
+.top{
+    top: 0;
+    align-items: center;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 4.5rem;
+    border-radius: 1rem;
+}
+.logo h1{
+    font-family: logo;
+    letter-spacing: 0.2rem;
+    margin-left: 45rem;
+    margin-top: 1.5rem;
+    color: var(--color-dark);
+}
+/*----------------main--------------------*/
+.main{
+    display: grid;
+    grid-template-columns: 30vw auto;
+    column-gap: 5rem;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 6rem;
+
+}
+/*----------------left--------------------*/
+.left{
+    overflow: hidden;
+    height: 34rem;
+    margin-left: 10rem;
+    position: fixed;
+    width: 24rem;
+    border-radius: 2rem;
+}
+.account{
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    width: 11rem;
+    height: 4rem;
+    gap: 1rem;
+    padding-top: 0.3rem;
+    padding-left: 1rem;
+    margin-left: 6rem;
+    margin-top: 0.5rem;
+    background-color: whitesmoke;
+    border: 1px solid var(--color-white);
+    box-shadow: 0 4px 8px 0 rgba(15, 14, 14, 0.2),0 6px 20px 0 rgba(14, 13, 13, 0.19);
+}
+.account:hover{
+    background-color: var(--color-light);
+    border: 1px solid var(--color-white);
+}
+.account-name{
+    line-height: 0.1rem;
+}
+.account-photo img{
+    width: 50px;
+    border-radius: 5rem;
+}
+.icon{
+    position: relative;
+    width: 23rem;
+    height: 26.3rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+    display: block;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-left: 0.5rem;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(15, 14, 14, 0.2),0 6px 20px 0 rgba(14, 13, 13, 0.19);
+}
+.those:hover{
+    background-color: var(--color-light);
+    border-radius: 2rem;
+}
+.fs{
+    background-color: var(--color-light);
+    border-radius: 2rem;
+    color: var(--color-primary);
+    border:  1px solid blue;
+}
+.those{
+    padding-left: 6rem;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 0.1rem;
+}
+.count{
+    width: 1.3rem;
+    position: absolute;
+    font-size: 0.8rem;
+    background-color: var(--color-danger);
+    color: var(--color-white);
+    margin-top: -1rem;
+    height: 0.5rem;
+    border-radius: 2rem;
+    padding-top: 0.6rem;
+    padding-left: 0.2rem;
+    margin-left: -0.5rem;
+}
+/*------------------------------------------------right--------------------------------------*/
+.right{
+    position: absolute;
+    overflow: hidden;
+    margin-left: 42rem;
+    height: fit-content;
+    width: fit-content;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 2rem;
+    background-color: var(--color-light);
+}
+/*------------------------------------------one----------------------------------------------*/
+.one{
+    display: "";
+    overflow: hidden;
+    border-radius: 2rem;
+    
+}
+.status{
+    padding-left: 1rem;
+    display: flex;
+    width: fit-content;
+    gap: 1rem;
+    overflow-y: auto;
+    border-radius: 2rem;
+    padding-top: 0.5rem;
+    background-color: whitesmoke;
+}
+.une{
+    line-height: 1.5rem;
+    align-items: center;
+    width: fit-content;
+    display: block;
+}
+.status img{
+     border: 2px solid var(--color-primary);
+     width: 71px;
+}
+.status img:hover{
+    opacity: 0.8;
+}
+.test{
+    margin-left: 1.8rem;
+}
+.head .account-photo img{
+    width: 3rem;
+}
+.account-photo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.name{
+    font-weight: bolder;
+}
+.head{
+    display: flex;
+    align-items: center;
+    gap: 28rem;
+    width: fit-content;
+    margin-left: 2rem;
+}
+.post-photo img{
+    width: 38rem;
+    height: 38rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 2rem;
+}
+.post{
+    overflow: hidden;
+    width: 40rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: whitesmoke;
+    height: fit-content;
+}
+.tags{
+    display: flex;
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    gap: 23rem;
+}
+.left-tags{
+    display: flex;
+    gap: 2rem;
+ }
+.liker{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.liker .account-photo{
+    margin-left: 7rem;
+}
+.liker img{
+    width: 2.5rem;
+    margin-left: -2.5rem;
+    border: 1px solid var(--color-white);
+    overflow: hidden;
+}
+.mee{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 5rem;
+}
+.comment a{
+    color: var(--color-dark);
+    margin-left: 5rem;
+}
+.hour{
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+/*-----------------------------------------two------------------------------------------------------*/
+.two{
+    display: none;
+    border-radius: 2rem;
+    width: fit-content;
+    overflow: hidden;
+    height: fit-content;
+    box-shadow: 0 2px 4px 0 rgba(15, 14, 14, 0.2),0 3px 10px 0 rgba(14, 13, 13, 0.19);
+}
+.message-head{
+    border-radius: 2rem 2rem 0 0;
+    background-color: whitesmoke;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid whitesmoke;
+}
+.active {
+    content: "";
+    border: 1px solid var(--color-white);
+    width: 0.6rem;
+    height: 0.6rem;
+    position: relative;
+    border-radius: 5rem;
+    color: greenyellow;
+    background-color: greenyellow;
+    margin-left: -8rem;
+    margin-top: 2.5rem;
+    overflow: hidden;
+  }
+.messages-head{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+    width: 25rem;
+    margin-top: 0.5rem;
+    margin-left: 5rem;
+    height: 4rem;
+}
+.two input{
+    width: 20rem;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    background-color: var(--color-light);
+}
+.two .search{
+    margin-left: 4rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-light);
+    border-radius: 5rem;
+    width: 22rem;
+}
+.chat {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 5.6rem;
+    padding-left: 5rem;
+    background-color: whitesmoke;
+    border: 1px solid var(--color-light);
+}
+.chat:hover{
+    background-color: var(--color-light);
+    border: 1px solid var(--color-white);
+}
+.message{
+    height: fit-content;
+    overflow-y: auto;
+    background-color: whitesmoke;
+}
+/*-----------------------------------------three------------------------------------------------------*/
+.three{
+    display: none;
+    border-radius: 2rem;
+    width: 30rem;
+    overflow: hidden;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(15, 14, 14, 0.2),0 6px 20px 0 rgba(14, 13, 13, 0.19);
+}
+.friend{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile-name{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.notifications .hours{
+    margin-left: 5rem;
+}
+.friends{
+    height: 4.8rem;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    background-color: whitesmoke;
+    border: 1px solid var(--color-light);
+}
+.friends:hover{
+    border: 1px solid var(--color-white);
+    background-color: var(--color-light);
+}
+.notifications-head{
+    height: 5rem;
+    border-radius: 2rem 2rem 0 0;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    background-color: whitesmoke;
+    padding-left: 5rem;
+}
+.notif{
+    height: fit-content;
+    overflow: auto;
+}
+/*-----------------------------------------four------------------------------------------------------*/
+.four{
+    display: none;
+    border-radius: 2rem;
+    width: 30rem;
+    overflow: hidden;
+    height: fit-content;
+}
+.heads{
+    height: 5rem;
+    width: 40rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: whitesmoke;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+.friendy{
+    overflow-y: auto;
+    width: 60rem;
+    height: fit-content;
+    border-radius: 0 0 2rem 2rem;
+}
+.un{
+    height: 5.8rem;
+    background-color: whitesmoke;
+    padding-left: 5rem;
+    border: 1px solid var(--color-light);
+}
+.request-name{
+    line-height: 0.2rem;
+}
+.blue{
+    display: flex;
+    gap: 1rem;
+}
+button{
+    background-color: var(--color-2white);
+    color: var(--col);
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+}
+.confirm{
+    color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+.confirm:hover{
+    background-color: blue;
+}
+.decline{
+    border: 1px solid;
+}
+.decline:hover{
+    background-color: var(--color-gray);
+}
+.un .account-photo img{
+    width: 65px;
+    height: 65px;
+    border-radius: 5rem;
+}
+/*-----------------------------------------------------------------media---------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+    .logo h1{
+        margin-left: 35rem;
+    }
+    .left{
+        margin-left: 3rem;
+    }
+    .right{
+        margin-left: 30rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .logo h1{
+        margin-left: 30rem;
+    }
+    .icon{
+        width: 17rem;
+        margin-left: 0.2rem;
+    }
+    .those{
+        padding-left: 4rem;
+    }
+    .left{
+        margin-left: 0rem;
+    }
+    .right{
+        margin-left: 20rem;
+    }
+    .account{
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .logo h1{
+        margin-left: 20rem;
+    }
+    .icon{
+        padding-left: 0rem;
+        border-radius: 1rem;
+        width: 5rem;
+        margin-left: 0.2rem;
+    }
+    .icon h3{
+        display: none;
+    }
+    .icon a{
+        display: block;
+        line-height: 3.6rem;
+    }
+    .fs{
+        border-radius: 1rem;
+    }
+    .those:hover{
+        border-radius: 1rem;
+    }
+    .those{
+        padding-left: 1.5rem;
+    }
+    .account{
+        margin-left: 1rem;
+        width: fit-content;
+        height: fit-content;
+        padding-top: 0rem;
+        padding-left: 0rem;
+    }
+    .account .account-name{
+        display: none;
+    }
+    .right{
+        margin-left: 7rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .right{
+        margin-left: 6rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .logo h1{
+        margin-left: 15rem;
+    }
+    .account{
+        margin-left: 0rem;
+    }
+    .icon{
+        width: 4rem;
+        margin-left: 0rem;
+    }
+    .right{
+        margin-left: 5rem;
+    }
+    .test{
+        margin-left: 1rem;
+    }
+    .status img{
+         width: 50px;
+         height: 3rem;
+    }
+
+    .head{
+        gap: 20rem;
+        margin-left: 2rem;
+    }
+    .post-photo img{
+        width: 29rem;
+        height: 29rem;
+        margin-left: 1rem;
+    }
+    .post{
+        width: 31rem;
+    }
+    .tags{
+        margin-left: 3rem;
+        gap: 17rem;
+    }
+    .liker .account-photo{
+        margin-left: 5rem;
+    }
+    .mee{
+        margin-left: 3rem;
+    }
+    .comment a{
+        margin-left: 3rem;
+    }
+    .hour{
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .liker img{
+        width: 2rem;
+    }
+    .logo h1{
+        margin-left: 10rem;
+    }
+    .right{
+        margin-left: 0rem;
+    }
+    .status img{
+        width: 40px;
+        height: 2.5rem;
+    }
+   .test{
+    margin-left: 0.5rem;
+    }
+   .head{
+    gap: 15rem;
+    }
+   .post-photo img{
+    width: 25rem;
+    height: 25rem;
+    }
+   .post{
+    width: 27rem;
+    }
+   .tags{
+    margin-left: 2rem;
+    gap: 15rem;
+    }
+
+   .messages-head{
+    gap: 10rem;
+    width: 20rem;
+    margin-left: 4.5rem;
+    }
+    .two input{
+    width: 18rem;
+    padding: 10px;
+    }
+    .two .search{
+    margin-left: 4rem;
+    width: 20rem;
+    }
+    .three{
+        width: 25rem;
+    }
+    .four{
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 415px) {
+    .status img{
+        width: 37px;
+        height: 2.5rem;
+    }
+    .status{
+        padding-left: 0rem;
+        border-radius: 1rem;
+    }
+    .test{
+        margin-left: 0.3rem;
+    }
+    .right{
+        margin-left: -0.3rem;
+    }
+    .head{
+        gap: 13rem;
+        }
+    .post-photo img{
+        width: 25rem;
+        height: 25rem;
+        margin-left: 0rem;
+    }
+    .post{
+        width: 25.5rem;
+    }
+    .tags{
+        margin-left: 2rem;
+        gap: 13rem;
+    }
+}
+@media screen and (max-width: 390px) {
+    .logo h1{
+        margin-left: 8rem;
+    }
+    .status img{
+        width: 35px;
+        height: 2.3rem;
+   }
+   .test{
+    margin-left: 0.2rem;
+   }
+   .head{
+    gap: 12rem;
+    }
+   .post-photo img{
+    width: 23.5rem;
+    height: 23.5rem;
+    margin-left: 0rem;
+   }
+   .post{
+    width: 24rem;
+   }
+   .messages-head{
+    gap: 9rem;
+    width: 18rem;
+    }
+    .two input{
+    width: 17rem;
+    padding: 10px;
+    }
+    .two .search{
+    margin-left: 4rem;
+    width: 19rem;
+    }
+    .three{
+        width: 23rem;
+    }
+    .four{
+        width: 23rem;
+    }
+    .tags{
+        margin-left: 1rem;
+        gap: 12rem;
+    }
+}
+/*-                   end                         -*/
